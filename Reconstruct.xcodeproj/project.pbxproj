@@ -15,6 +15,12 @@
 		F520828A1D536AAE00E6175F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52082881D536AAE00E6175F /* LaunchScreen.storyboard */; };
 		F52082951D536AAE00E6175F /* ReconstructTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F52082941D536AAE00E6175F /* ReconstructTests.m */; };
 		F52082A01D536AAE00E6175F /* ReconstructUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F520829F1D536AAE00E6175F /* ReconstructUITests.m */; };
+		F52082AF1D536AFB00E6175F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52082AE1D536AFB00E6175F /* AVFoundation.framework */; };
+		F52082B21D536CF900E6175F /* ZXTakePhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52082B11D536CF900E6175F /* ZXTakePhotoController.m */; };
+		F52082B61D5389B400E6175F /* SCCaptureSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F52082B51D5389B400E6175F /* SCCaptureSessionManager.m */; };
+		F52082BA1D538C3600E6175F /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = F52082B91D538C3600E6175F /* UIImage+Resize.m */; };
+		F52082BD1D538C4B00E6175F /* SCCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F52082BC1D538C4B00E6175F /* SCCommon.m */; };
+		F52082C01D538C7400E6175F /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = F52082BF1D538C7400E6175F /* ALAssetsLibrary+CustomPhotoAlbum.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,18 @@
 		F520829B1D536AAE00E6175F /* ReconstructUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReconstructUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F520829F1D536AAE00E6175F /* ReconstructUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReconstructUITests.m; sourceTree = "<group>"; };
 		F52082A11D536AAE00E6175F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F52082AE1D536AFB00E6175F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F52082B01D536CF900E6175F /* ZXTakePhotoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZXTakePhotoController.h; path = TakePhoto/ZXTakePhotoController.h; sourceTree = "<group>"; };
+		F52082B11D536CF900E6175F /* ZXTakePhotoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZXTakePhotoController.m; path = TakePhoto/ZXTakePhotoController.m; sourceTree = "<group>"; };
+		F52082B41D5389B400E6175F /* SCCaptureSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCCaptureSessionManager.h; sourceTree = "<group>"; };
+		F52082B51D5389B400E6175F /* SCCaptureSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCaptureSessionManager.m; sourceTree = "<group>"; };
+		F52082B71D538BF800E6175F /* SCDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCDefines.h; sourceTree = "<group>"; };
+		F52082B81D538C3600E6175F /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		F52082B91D538C3600E6175F /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		F52082BB1D538C4B00E6175F /* SCCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCCommon.h; sourceTree = "<group>"; };
+		F52082BC1D538C4B00E6175F /* SCCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCommon.m; sourceTree = "<group>"; };
+		F52082BE1D538C7400E6175F /* ALAssetsLibrary+CustomPhotoAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAssetsLibrary+CustomPhotoAlbum.h"; sourceTree = "<group>"; };
+		F52082BF1D538C7400E6175F /* ALAssetsLibrary+CustomPhotoAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAssetsLibrary+CustomPhotoAlbum.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F52082AF1D536AFB00E6175F /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +104,7 @@
 				F52082931D536AAE00E6175F /* ReconstructTests */,
 				F520829E1D536AAE00E6175F /* ReconstructUITests */,
 				F52082781D536AAE00E6175F /* Products */,
+				F52082AD1D536AFB00E6175F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +121,7 @@
 		F52082791D536AAE00E6175F /* Reconstruct */ = {
 			isa = PBXGroup;
 			children = (
+				F52082B31D536D0100E6175F /* TakePhoto */,
 				F520827D1D536AAE00E6175F /* AppDelegate.h */,
 				F520827E1D536AAE00E6175F /* AppDelegate.m */,
 				F52082801D536AAE00E6175F /* ViewController.h */,
@@ -138,6 +159,32 @@
 				F52082A11D536AAE00E6175F /* Info.plist */,
 			);
 			path = ReconstructUITests;
+			sourceTree = "<group>";
+		};
+		F52082AD1D536AFB00E6175F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F52082AE1D536AFB00E6175F /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F52082B31D536D0100E6175F /* TakePhoto */ = {
+			isa = PBXGroup;
+			children = (
+				F52082BE1D538C7400E6175F /* ALAssetsLibrary+CustomPhotoAlbum.h */,
+				F52082BF1D538C7400E6175F /* ALAssetsLibrary+CustomPhotoAlbum.m */,
+				F52082B81D538C3600E6175F /* UIImage+Resize.h */,
+				F52082B91D538C3600E6175F /* UIImage+Resize.m */,
+				F52082B71D538BF800E6175F /* SCDefines.h */,
+				F52082BB1D538C4B00E6175F /* SCCommon.h */,
+				F52082BC1D538C4B00E6175F /* SCCommon.m */,
+				F52082B41D5389B400E6175F /* SCCaptureSessionManager.h */,
+				F52082B51D5389B400E6175F /* SCCaptureSessionManager.m */,
+				F52082B01D536CF900E6175F /* ZXTakePhotoController.h */,
+				F52082B11D536CF900E6175F /* ZXTakePhotoController.m */,
+			);
+			name = TakePhoto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,7 +328,12 @@
 			files = (
 				F52082821D536AAE00E6175F /* ViewController.m in Sources */,
 				F520827F1D536AAE00E6175F /* AppDelegate.m in Sources */,
+				F52082BD1D538C4B00E6175F /* SCCommon.m in Sources */,
+				F52082B61D5389B400E6175F /* SCCaptureSessionManager.m in Sources */,
 				F520827C1D536AAE00E6175F /* main.m in Sources */,
+				F52082B21D536CF900E6175F /* ZXTakePhotoController.m in Sources */,
+				F52082BA1D538C3600E6175F /* UIImage+Resize.m in Sources */,
+				F52082C01D538C7400E6175F /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
