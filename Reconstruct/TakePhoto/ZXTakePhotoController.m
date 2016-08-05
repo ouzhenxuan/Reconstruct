@@ -45,6 +45,8 @@
     [super viewDidLoad];
     
     
+    
+    
     self.cameraShowView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
     
     self.cameraShowView.backgroundColor = [UIColor yellowColor];
@@ -60,7 +62,7 @@
     if (CGRectEqualToRect(_previewRect, CGRectZero)) {
         self.previewRect = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
     }
-    [manager configureWithParentLayer:self.view previewRect:_previewRect];
+    [manager configureWithParentLayer:self.cameraShowView previewRect:_previewRect];
     self.captureManager = manager;
     [_captureManager.session startRunning];
     
@@ -71,12 +73,25 @@
     _picShowView.hidden = YES;
     
     
-    UIButton * btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
-    btn.backgroundColor = [UIColor redColor];
+    UIButton * btn = [[UIButton alloc] initWithFrame:CGRectMake((SC_DEVICE_SIZE.width - 100)/2, SC_DEVICE_SIZE.height - 150, 100, 100)];
+    btn.backgroundColor = [UIColor whiteColor];
+    btn.layer.cornerRadius = 50;
+    btn.layer.masksToBounds = YES;
     [self.view addSubview:btn];
     [btn addTarget:self action:@selector(takeThePhoto) forControlEvents:UIControlEventTouchUpInside];
     
     
+    UIButton * backBtn = [[UIButton alloc] initWithFrame:CGRectMake(15, 20, 60, 40)];
+    [backBtn setTitle:@"<" forState:UIControlStateNormal];
+    [backBtn setTintColor:[UIColor blackColor]];
+    [self.view addSubview:backBtn];
+    backBtn.backgroundColor = [UIColor blackColor];
+    [backBtn addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
+    
+}
+
+- (void)backAction{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 //拍照
@@ -91,9 +106,9 @@
     
     
     [_captureManager takePicture:^(UIImage *stillImage) {
-       dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-         UIImageWriteToSavedPhotosAlbum(stillImage, nil, nil, nil);//存至本机
-       });
+//       dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//         UIImageWriteToSavedPhotosAlbum(stillImage, nil, nil, nil);//存至本机
+//       });
         NSData * ImageData = UIImagePNGRepresentation(stillImage);
         
         
