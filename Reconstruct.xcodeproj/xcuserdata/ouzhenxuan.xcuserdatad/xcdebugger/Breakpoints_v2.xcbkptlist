@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Reconstruct/TakePhoto/ZXTakePhotoController.m"
-            timestampString = "492094461.994349"
+            timestampString = "494932912.552917"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
-            landmarkName = "-takeThePhoto"
+            startingLineNumber = "175"
+            endingLineNumber = "175"
+            landmarkName = "-takePhotoTimerAction"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Reconstruct/TakePhoto/ZXTakePhotoController.m"
-            timestampString = "492094461.994349"
+            timestampString = "494932912.552917"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116"
-            landmarkName = "-takeThePhoto"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
+            landmarkName = "-takePhotoTimerAction"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

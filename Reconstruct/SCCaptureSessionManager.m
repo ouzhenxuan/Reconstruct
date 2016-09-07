@@ -203,7 +203,7 @@
     
     [_stillImageOutput captureStillImageAsynchronouslyFromConnection:videoConnection completionHandler:^(CMSampleBufferRef imageDataSampleBuffer, NSError *error) {
         
-        CFDictionaryRef exifAttachments = CMGetAttachment(imageDataSampleBuffer, kCGImagePropertyExifDictionary, NULL);
+        CFDictionaryRef exifAttachments = (CFDictionaryRef)CMGetAttachment(imageDataSampleBuffer, kCGImagePropertyExifDictionary, NULL);
         if (exifAttachments) {
             SCDLog(@"attachements: %@", exifAttachments);
         } else {
